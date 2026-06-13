@@ -9,7 +9,9 @@
     "server": "node --watch server/index.js",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "vault:sync": "node server/vault-sync.js",
+    "vault:watch": "node server/vault-sync.js --watch"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",

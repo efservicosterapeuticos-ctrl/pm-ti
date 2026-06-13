@@ -6,6 +6,7 @@ import ApplicationDetail from './pages/ApplicationDetail'
 import Dashboards from './pages/Dashboards'
 import DashboardLive from './pages/DashboardLive'
 import Bots from './pages/Bots'
+import Vault from './pages/Vault'
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="/dashboards" element={<Dashboards />} />
         <Route path="/dashboards/:slug/:repo" element={<DashboardLive />} />
         <Route path="/bots" element={<Bots />} />
+        <Route path="/vault" element={<Vault />} />
         <Route path="*" element={<Navigate to="/aplicacoes" replace />} />
       </Route>
     </Routes>

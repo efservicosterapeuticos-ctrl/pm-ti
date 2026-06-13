@@ -1,11 +1,12 @@
 import { NavLink } from 'react-router-dom'
-import { LayoutDashboard, Boxes, Monitor, Bot } from 'lucide-react'
+import { LayoutDashboard, Boxes, Monitor, Bot, BookOpen } from 'lucide-react'
 
 const NAV = [
   { to: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { to: '/aplicacoes', label: 'Aplicações', icon: Boxes },
   { to: '/dashboards', label: 'Dashboards', icon: Monitor },
   { to: '/bots', label: 'Bots', icon: Bot },
+  { to: '/vault', label: 'Vault', icon: BookOpen },
 ]
 
 export default function Sidebar() {
@@ -42,7 +43,7 @@ export default function Sidebar() {
       </aside>
 
       {/* Mobile: bottom bar */}
-      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-30 bg-white border-t border-slate-200 grid grid-cols-4">
+      <nav className="md:hidden fixed bottom-0 left-0 right-0 z-30 bg-white border-t border-slate-200 grid grid-cols-5">
         {NAV.map(({ to, label, icon: Icon }) => (
           <NavLink
             key={to}
